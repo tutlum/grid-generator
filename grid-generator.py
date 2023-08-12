@@ -12,7 +12,7 @@ def split_and_stick(image_path, n, m, spacing, background_color, ratio = 0):
     cell_width = width / n
     cell_height = height / m
 
-    if (ratio != 0):
+    if (ratio == 0):
         ratio = height / width
     
     # Create a new image to store the result
@@ -44,7 +44,8 @@ if __name__ == "__main__":
     spacing = int(sys.argv[4])
     ratio = 0
     if len(sys.argv) == 6:
-        ratio = int(sys.argv[5])
+        ratio = float(sys.argv[5])
+    print(ratio)
     #input_image_path = "input_image.jpg"  # Replace with your image path
     #n = 3  # Number of columns in the grid
     #m = 2  # Number of rows in the grid
