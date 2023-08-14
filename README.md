@@ -5,6 +5,7 @@ Slices an image into parts and sticks them together with a colored spacing into 
 `
 python grid-generator.py <image_path> <horizontal_cells> <vertical_cells> <spacing> [<spacing_ratio>]
 `
+
 `spacing_ratio`: the given spacing is reduced to a proper vertical height to keep the image ratio.
 
 
